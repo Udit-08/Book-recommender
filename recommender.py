@@ -4,9 +4,9 @@ import pickle
 import pandas as pd
 
 st.title("Movie recommender system")
-pt = pickle.load(open('D:/Stats/Project/pt.pkl', 'rb'))
-similarities = pickle.load(open('D:/Stats/Project/sim.pkl',"rb"))
-url = pickle.load(open('D:/Stats/Project/final.pkl',"rb"))
+pt = pickle.load(open('pt.pkl', 'rb'))
+similarities = pickle.load(open('sim.pkl',"rb"))
+url = pickle.load(open('final.pkl',"rb"))
 
 
 def recommend(book_name):
@@ -53,6 +53,7 @@ if st.button("Recommand"):
     with col5:
         st.text(lis[4][0])
         st.image(lis[4][1])
+
 
 
 
